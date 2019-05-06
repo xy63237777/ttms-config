@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: zuul-gateway
+server:
+  port: ENC(VTSBvc3XBsoB/B4F9Nvibg==)
+eureka:
+  client:
+    service-url:
+      defaultZone: ENC(PceHPbX+haOXaB+3wZU8lPUEdpIesIR4nDjG3Kq+sDjwBrkRrvMo1g==)
+  instance:
+    instance-id: gateway.com
