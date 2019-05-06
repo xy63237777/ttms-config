@@ -1,3 +1,4 @@
+
 spring:
   datasource:
 #   数据源基本配置
@@ -20,6 +21,8 @@ spring:
     poolPreparedStatements: true
   application:
     name: provider-movies
+  profiles:
+    active: dev
 server:
   port: 19527
 eureka:
@@ -28,5 +31,6 @@ eureka:
       defaultZone: http://eureka10086.com:10086/eureka/
 pagehelper:
   reasonable: true
-
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/**/*.xml
 
