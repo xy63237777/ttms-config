@@ -8,6 +8,6 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: ENC(PceHPbX+haOXaB+3wZU8lPUEdpIesIR4nDjG3Kq+sDjwBrkRrvMo1g==)
+      defaultZone: http://eureka10086.com:10086/eureka/
   instance:
     instance-id: gateway.com
