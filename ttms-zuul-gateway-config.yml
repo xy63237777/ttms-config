@@ -4,7 +4,7 @@ spring:
   application:
     name: zuul-gateway
 server:
-  port: ENC(VTSBvc3XBsoB/B4F9Nvibg==)
+  port: 6666
 eureka:
   client:
     service-url:
