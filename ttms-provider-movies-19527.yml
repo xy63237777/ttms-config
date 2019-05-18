@@ -34,3 +34,8 @@ pagehelper:
 mybatis:
   mapper-locations: classpath:mybatis/mapper/**/*.xml
 
+security:
+  oauth2:
+    resource:
+      id: provider-movies
+      user-info-uri: http://www.ttms.com:11111/user
