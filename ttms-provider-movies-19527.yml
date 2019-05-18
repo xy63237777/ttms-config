@@ -39,3 +39,5 @@ security:
     resource:
       id: provider-movies
       user-info-uri: http://www.ttms.com:11111/oa/ouser
+      jwt:
+        key-uri: http://www.thesevensky.com:11111/oauth/token_key
