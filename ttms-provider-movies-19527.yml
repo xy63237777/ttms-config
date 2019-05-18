@@ -20,7 +20,7 @@ spring:
     testOnReturn: false
     poolPreparedStatements: true
   application:
-    name: provider-user
+    name: provider-movies
   profiles:
     active: dev
 server:

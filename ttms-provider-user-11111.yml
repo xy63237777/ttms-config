@@ -1,9 +1,11 @@
 
+
+
 spring:
   datasource:
 #   数据源基本配置
     username: root
-    password: ENC(3eB+q2aWMZUuFAF4/uTCjyygRtDCkyi1)
+    password: ENC(YfyxpJmnENdbi3b0KivVLDfXDBxJCizV)
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/ttms?useUnicode=true&characterEncoding=gbk&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
     type: com.alibaba.druid.pool.DruidDataSource
@@ -20,17 +22,33 @@ spring:
     testOnReturn: false
     poolPreparedStatements: true
   application:
-    name: provider-user
+    name: auth-user
   profiles:
     active: dev
+
 server:
   port: 11111
 eureka:
   client:
     service-url:
       defaultZone: http://eureka10086.com:10086/eureka/
+  instance:
+    instance-id: auth-user
 pagehelper:
   reasonable: true
 mybatis:
   mapper-locations: classpath:mybatis/mapper/**/*.xml
+
+thesevensky:
+  security:
+    oauth2:
+      clients:
+        - clientId: theSevenSky1
+          secret: ENC(jo0UYX0NrbqqcdJHZCV/UFXi6I93S9CV)
+          redirectUris : [http://www.ttms.com/login,http://www.baidu.com]
+
+
+
+
+
 
