@@ -38,4 +38,4 @@ security:
   oauth2:
     resource:
       id: provider-movies
-      user-info-uri: http://www.ttms.com:11111/oa/user
+      user-info-uri: http://www.ttms.com:11111/oa/ouser
