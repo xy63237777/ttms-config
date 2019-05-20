@@ -1,6 +1,5 @@
 
 
-
 spring:
   datasource:
 #   数据源基本配置
@@ -22,30 +21,35 @@ spring:
     testOnReturn: false
     poolPreparedStatements: true
   application:
-    name: auth-user
+    name: provider-user
   profiles:
     active: dev
 
 server:
-  port: 11111
+  port: 12222
 eureka:
   client:
     service-url:
       defaultZone: http://eureka10086.com:10086/eureka/
   instance:
-    instance-id: auth-user
+    instance-id: provider-user
 pagehelper:
   reasonable: true
 mybatis:
   mapper-locations: classpath:mybatis/mapper/**/*.xml
+  
+auth-server: http://www.thesevensky.com:11111
 
-thesevensky:
-  security:
-    oauth2:
-      clients:
-        - clientId: theSevenSky1
-          secret: ENC(jo0UYX0NrbqqcdJHZCV/UFXi6I93S9CV)
-          redirectUris : [http://www.ttms.com/login,http://www.baidu.com]
+security:
+  oauth2:
+    client:
+      client-id: theSevenSky1
+      client-secret: ENC(J7rvS+15xacoAGrim2n8uKIDpxj/Fkip)
+      access-token-uri: ${auth-server}/oauth/token
+      user-authorization-uri: ${auth-server}/oauth/authorize
+    resource:
+      token-info-uri: ${auth-server}/oauth/check_token
+
 
 
 

@@ -1,4 +1,4 @@
-
+auth-server: http://www.thesevensky.com:11111
 spring:
   datasource:
 #   数据源基本配置
@@ -29,7 +29,20 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka10086.com:10086/eureka/
+  instance:
+    instance-id: provider-movies
 pagehelper:
   reasonable: true
 mybatis:
   mapper-locations: classpath:mybatis/mapper/**/*.xml
+
+  
+security:
+  oauth2:
+    client:
+      client-id: theSevenSky1
+      client-secret: ENC(DiWJab9q14m7rykKydz8t2fJIWbkT6Iw)
+      access-token-uri: ${auth-server}/oauth/token
+      user-authorization-uri: ${auth-server}/oauth/authorize
+    resource:
+      token-info-uri: ${auth-server}/oauth/check_token

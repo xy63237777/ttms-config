@@ -5,7 +5,7 @@ spring:
   datasource:
 #   数据源基本配置
     username: root
-    password: ENC(9ZQZuBEDQXCnAwB9XkbWr7GSv4Ld+5tb)
+    password: ENC(ftbgM/1/4unZzsmJD0YCMribYtg4Lr6P)
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/ttms?useUnicode=true&characterEncoding=gbk&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
     type: com.alibaba.druid.pool.DruidDataSource
