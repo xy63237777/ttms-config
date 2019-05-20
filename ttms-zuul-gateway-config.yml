@@ -1,4 +1,4 @@
-auth-server: http://www.thesevensky.com:11111
+
 feign:
   hystrix:
     enabled: true
@@ -17,13 +17,3 @@ eureka:
 pagehelper:
   reasonable: true
 
-security:
-  oauth2:
-    client:
-      client-id: theSevenSky1
-      client-secret: xy123456
-      user-authorization-uri: ${auth-server}/oauth/authorize
-      access-token-uri: ${auth-server}/oauth/token
-    resource:
-      jwt:
-        key-uri: ${auth-server}/oauth/token_key
