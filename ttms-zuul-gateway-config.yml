@@ -21,7 +21,7 @@ security:
   oauth2:
     client:
       client-id: theSevenSky1
-      client-secret: ENC(X0pvOhclGQr55dpaWeujp7nKZCDgTZsE)
+      client-secret: xy123456
       user-authorization-uri: ${auth-server}/oauth/authorize
       access-token-uri: ${auth-server}/oauth/token
     resource:
