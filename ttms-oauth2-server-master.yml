@@ -39,13 +39,7 @@ pagehelper:
 mybatis:
   mapper-locations: classpath:mybatis/mapper/**/*.xml
 
-thesevensky:
-  security:
-    oauth2:
-      clients:
-        - clientId: theSevenSky1
-          secret: ENC(jo0UYX0NrbqqcdJHZCV/UFXi6I93S9CV)
-          redirectUris : [http://www.ttms.com/login,http://www.baidu.com]
+
 
 
 
