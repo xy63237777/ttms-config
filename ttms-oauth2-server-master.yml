@@ -1,0 +1,54 @@
+
+
+
+spring:
+  datasource:
+#   数据源基本配置
+    username: root
+    password: ENC(9ZQZuBEDQXCnAwB9XkbWr7GSv4Ld+5tb)
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ttms?useUnicode=true&characterEncoding=gbk&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
+    type: com.alibaba.druid.pool.DruidDataSource
+#   数据源其他配置
+    initialSize: 30
+    minIdle: 30
+    maxActive: 70
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+  application:
+    name: oauth2-server
+  profiles:
+    active: dev
+
+server:
+  port: 11111
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka10086.com:10086/eureka/
+  instance:
+    instance-id: oauth2-server
+pagehelper:
+  reasonable: true
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/**/*.xml
+
+thesevensky:
+  security:
+    oauth2:
+      clients:
+        - clientId: theSevenSky1
+          secret: ENC(jo0UYX0NrbqqcdJHZCV/UFXi6I93S9CV)
+          redirectUris : [http://www.ttms.com/login,http://www.baidu.com]
+
+
+
+
+
+
