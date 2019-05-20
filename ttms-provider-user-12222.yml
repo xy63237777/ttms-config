@@ -38,17 +38,7 @@ pagehelper:
 mybatis:
   mapper-locations: classpath:mybatis/mapper/**/*.xml
   
-auth-server: http://www.thesevensky.com:11111
 
-security:
-  oauth2:
-    client:
-      client-id: theSevenSky1
-      client-secret: ENC(J7rvS+15xacoAGrim2n8uKIDpxj/Fkip)
-      access-token-uri: ${auth-server}/oauth/token
-      user-authorization-uri: ${auth-server}/oauth/authorize
-    resource:
-      token-info-uri: ${auth-server}/oauth/check_token
 
 
 
