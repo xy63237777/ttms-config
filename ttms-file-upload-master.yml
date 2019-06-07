@@ -21,6 +21,9 @@ spring:
     poolPreparedStatements: true
   profiles:
     active: dev
+  elasticsearch:
+    jest:
+      uris: http://www.ttms.com:9200
 server:
   port: 33399
 pagehelper:

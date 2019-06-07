@@ -23,6 +23,9 @@ spring:
     name: provider-movies
   profiles:
     active: dev
+  elasticsearch:
+    jest:
+      uris: http://www.ttms.com:9200
 server:
   port: 19527
 eureka:
