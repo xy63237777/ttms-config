@@ -4,7 +4,7 @@
 spring:
   datasource:
 #   数据源基本配置
-    username: root
+    username: thesevensky
     password: ENC(XWQIhdXApJR2zyhqKQ8h+IcWhFSjGUDs)
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/ttms?useUnicode=true&characterEncoding=gbk&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
