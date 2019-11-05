@@ -3,7 +3,7 @@ feign:
   hystrix:
     enabled: true
 server:
-  port: 80
+  port: 8080
 spring:
   application:
     name: http-client
